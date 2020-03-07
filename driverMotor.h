@@ -4,7 +4,7 @@
 class driverMotor{
     public:
         driverMotor(byte leftM1, byte leftM2, byte rightM1, byte rightM2); // инициализация поумолчанию. 
-        driverMotor(byte leftDr, byte leftSpd, byte rightDr, byte rightSpd, char type);
+        driverMotor(byte leftDr, byte leftSpd, byte rightDr, byte rightSpd, char type); // инициализация для мотор-шилда от амперки
         driverMotor(byte leftM1, byte leftM2, byte leftMS, byte rightM1, byte rightM2, byte rightMS, bool use_as_def = 1); // инициализвция для 6-пинового интерфейса. 
         void drive(bool directionLeft, byte speedLeft, bool directionRight, byte speedRight);
         void stop();
